@@ -1,5 +1,5 @@
 import React from "react";
-//import Modal from "./Modal.js";
+
 import "../index.css";
 
 class VentInput extends React.Component {
@@ -7,24 +7,17 @@ class VentInput extends React.Component {
     super(props);
   }
   data = this.props.data;
-  openModal() {}
 
   render() {
     return (
       <React.Fragment>
         <div className="bg-cyan-300 border-2 border-solid border-red-300-contrast w-100% p-10 m-5 rounded-lg text-black">
           <div className="vent-input">
-            {/*<button ventinput onClick={this.Modal.openModal}>
+            <button ventinput>
               <div className="v">{this.props.data.value}</div>
               <div className="l">{this.props.data.name}</div>
               <div className="u">unit</div>
-              {/*<Modal
-                openModal={this.Modal.openModal}
-                handleClose={this.Modal.closeModal}
-              >
-                <p>Modal</p>
-              </Modal>
-              </button>*/}
+            </button>
           </div>
         </div>
       </React.Fragment>
